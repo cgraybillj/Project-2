@@ -1,6 +1,7 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-    $( "#search" ).click(function() {
-        alert( "Handler for .click() called." );
-      });
+$(function () {
+    console.log('Ready!')
+    $( "#search" ).click(function () {
+        console.log('Clicked!')
+        $("#output").text("Searching...") 
+    })
 });
