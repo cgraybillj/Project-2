@@ -8,7 +8,7 @@ $(function () {
         console.log('Clicked!',apikey, q, limit, rating)
         $("#status").text("Searching...") 
         $.ajax({
-            url:'https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q+ '&limit=' + limit +' &offset=0&rating=' + rating + '&lang=en', function(data),
+            url:'https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q + '&limit=' + limit +' &offset=0&rating=' + rating + '&lang=en',
             method:'GET',
             success: function(data){
             $("#status").text('Enjoy ;)!')
