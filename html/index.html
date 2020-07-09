@@ -4,7 +4,8 @@
 <head>
     <title>Giphy API</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\JS\main.js"></script>
+    <script type="text/javascript"
+        src="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\JS\main.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,20 @@
 
     <form id="search">
         <label for="search"></label>
-        <input type="text" id="search" name="search" placeholder="Search...">
+        <input type="text" id="q" name="search" placeholder="Search...">
+        <label for="limit"> Choose a maximum number of hits:</label>
+        <input type="range" id="limit" name="vol" min="0" max="50">
+        <label for="cars">Choose a car:</label>
+        <select name="Rating" id="rating" form="Rating">
+            <option value="g">G</option>
+            <option value="pg">PG</option>
+            <option value="pg-13">PG-13</option>
+            <option value="r">R</option>
+        </select>
         <input type="button" id="search" value="Search">
-      </form>
-      <br>
-      <span id="output"></span>
+    </form>
+    <br>
+    <span id="output"></span>
 </body>
 
 </html>
