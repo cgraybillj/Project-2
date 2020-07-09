@@ -6,8 +6,9 @@ $(function () {
         var limit = $('#limit').val();
         var rating = $('#rating').val();
         console.log('Clicked!',apikey, q, limit, rating)
-        $("#output").text("Searching...") 
+        $("#status").text("Searching...") 
         $.getJSON('https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q+ '&limit=' + limit +' &offset=0&rating=' + rating + '&lang=en', function(data){
+            $("#status").text('Enjoy ;)!')
             console.log(data)
         })
 
