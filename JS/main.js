@@ -34,7 +34,7 @@ $(function () {
                     $div.addClass("gif-box");
                     $rating.text("Rating: " + gifObj.rating);
                     $div.append($img, $rating);
-                    $("#results").append($div);
+                    $("#output").append($div);
                 }
 
                 $(".gif").on("click", function () {
