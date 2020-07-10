@@ -5,8 +5,9 @@ $(function () {
         var q = $('#q').val();
         var limit = $('#limit').val();
         var rating = $('#rating').val();
-        console.log('Clicked!', apikey, q, limit, rating)
+        console.log('Clicked!')
         $("#status").text("Searching...")
+        $("#output").html("");
         $.ajax({
             url: 'https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q + '&limit=' + limit + ' &offset=0&rating=' + rating + '&lang=en',
             method: 'GET',
@@ -48,7 +49,10 @@ $(function () {
                     }
                 });
 
-            }
+            },
+            error: function () {
+                alert('-__- Please input info in search bar and click submit!')
+            },
         });
 
     })
