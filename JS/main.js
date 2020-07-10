@@ -1,6 +1,7 @@
 $(function () {
     console.log('Ready!')
     $("#search").click(function () {
+        var choice = $("input[name='url']:checked").val();
         var apikey = 'qCTweoTLPCLppqQ6z3Wz4z2DBnV0Tfzj';
         var q = $('#q').val();
         var limit = $('#limit').val();
@@ -9,7 +10,7 @@ $(function () {
         $("#status").text("Searching...")
         $("#output").html("");
         $.ajax({
-            url: 'https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q + '&limit=' + limit + ' &offset=0&rating=' + rating + '&lang=en',
+            url: choice + apikey + '&q=' + q + '&limit=' + limit + '&offset=0&rating=' + rating + '&lang=en',
             method: 'GET',
             success: function (data) {
                 if (q == 0) {
@@ -55,7 +56,8 @@ $(function () {
 
             },
             error: function () {
-                alert('-__- PLEASE INPUT INFO. INSEARCH BAR AND CLICK SUBMIT!')
+                $("#status").text("")
+                alert('Oops!\nSomething went wrong...')
             },
         });
 
