@@ -13,7 +13,7 @@ $(function () {
             method: 'GET',
             success: function (data) {
                 if (q == 0) {
-                    alert('-__- PLEASE INPUT INFO. INSEARCH BAR AND CLICK SUBMIT!')
+                    alert('-__-                                   -__-                                        -__-\n\n PLEASE INPUT INFO. IN SEARCH BAR AND CLICK SUBMIT!\n\n-__-                                    -__-                                       -__-')
                     $("#status").text("")
                     return false;
                 }
