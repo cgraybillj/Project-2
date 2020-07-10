@@ -13,7 +13,7 @@ $(function () {
             method: 'GET',
             success: function (data) {
                 if (q == 0) {
-                    alert('-__- Please input info in search bar and click submit!')
+                    alert('-__- PLEASE INPUT INFO. INSEARCH BAR AND CLICK SUBMIT!')
                     $("#status").text("")
                     return false;
                 }
@@ -55,7 +55,7 @@ $(function () {
 
             },
             error: function () {
-                alert('-__- Please input info in search bar and click submit!')
+                alert('-__- PLEASE INPUT INFO. INSEARCH BAR AND CLICK SUBMIT!')
             },
         });
 
