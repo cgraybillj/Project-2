@@ -4,22 +4,29 @@
 <head>
     <title>Giphy API</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\JS\main.js"></script>
-    <link rel="stylesheet" type="text/css" href="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\Style\styles.css">
+    <script type="text/javascript"
+        src="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\JS\main.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="C:\Users\carlo\OneDrive\Desktop\WebDesign\Project 2\Project-2\Style\styles.css">
 </head>
 
 <body>
     <nav>
         <ul>
-            <li> Giphy API </li>
-            <li> Search </li>
-            <li> About </li>
-            <li> Contact </li>
+            <div id='left'>
+                <li> Giphy API </li>
+            </div>
+            <div id="right">
+                <li> Search </li>
+                <li> About </li>
+                <li> Contact </li>
+            </div>
         </ul>
     </nav>
 
     <form id="info">
-        <input type= 'radio' id='choice' name='url' value='https://api.giphy.com/v1/gifs/search?api_key=' checked='checked'> 
+        <input type='radio' id='choice' name='url' value='https://api.giphy.com/v1/gifs/search?api_key='
+            checked='checked'>
         <label for="GIF">GIF</label>
         <input type='radio' id='choice' name='url' value='https://api.giphy.com/v1/stickers/search?api_key='>
         <label for="Sticker">Sticker</label> <br> <br>

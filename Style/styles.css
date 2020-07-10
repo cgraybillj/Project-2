@@ -1,22 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 nav {
-  background-color: #333;
+  background-color: #333333;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-nav ul {
-  text-align: center;
-  list-style-type: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
+ul #left {
+  float: left;
+  border-style: solid;
+  border-color: white;
+  padding-left: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-nav ul li {
-  display: inline;
+ul #left li {
+  list-style-type: none;
+  list-style-type: none;
   font-family: 'Righteous', cursive;
-  font-size: 17px;
+  font-size: 1em;
+  color: #ffffff;
+  border-style: solid;
+  border-color: white;
+}
+
+ul #right {
+  float: right;
+  border-style: solid;
+  border-color: white;
+  padding-right: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+ul #right li {
+  list-style-type: none;
+  list-style-type: none;
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+  color: #ffffff;
+  border-style: solid;
+  border-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
