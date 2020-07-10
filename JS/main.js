@@ -7,12 +7,16 @@ $(function () {
         var rating = $('#rating').val();
         console.log('Clicked!')
         $("#status").text("Searching...")
-        $("#output").html("")
+        $("#output").html("");
         $.ajax({
             url: 'https://api.giphy.com/v1/gifs/search?api_key=' + apikey + '&q=' + q + '&limit=' + limit + ' &offset=0&rating=' + rating + '&lang=en',
             method: 'GET',
             success: function (data) {
-
+                if (q == 0) {
+                    alert('-__- Please input info in search bar and click submit!')
+                    $("#status").text("")
+                    return false;
+                }
                 $("#status").text('Enjoy ;)!')
 
                 for (i = 0; i < limit; i++) {
