@@ -6,17 +6,17 @@ nav {
   width: 100%;
 }
 
-ul #left {
+nav ul #left {
   float: left;
   border-style: solid;
   border-color: white;
-  padding-left: 5%;
+  margin-left: 5%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-ul #left li {
+nav ul #left li {
   list-style-type: none;
   list-style-type: none;
   font-family: 'Righteous', cursive;
@@ -26,23 +26,26 @@ ul #left li {
   border-color: white;
 }
 
-ul #right {
+nav #right {
   float: right;
   border-style: solid;
   border-color: white;
-  padding-right: 5%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-right: 10%;
+  padding-left: 5%;
 }
 
-ul #right li {
+nav #right li {
   list-style-type: none;
   list-style-type: none;
   font-family: 'Righteous', cursive;
   font-size: 1em;
   color: #ffffff;
-  border-style: solid;
-  border-color: white;
 }
 /*# sourceMappingURL=styles.css.map */

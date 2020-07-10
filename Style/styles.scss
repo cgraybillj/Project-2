@@ -9,37 +9,3 @@ nav {
     top: 0;
     width: 100%;
     }
-    ul {
-      #left {
-        float: left;
-        border-style: solid;
-        border-color: white;
-        padding-left: 5%;
-        display: inline-flex;
-        li {
-        list-style-type: none;
-        list-style-type: none;
-        font-family: 'Righteous', cursive;
-        font-size: 1em;
-        color: $color-font;
-        border-style: solid;
-        border-color: white;
-        }
-        }
-      #right {
-        float: right;
-        border-style: solid;
-        border-color: white;
-        padding-right: 5%;
-        display: inline-flex;
-        li {
-          list-style-type: none;
-          list-style-type: none;
-          font-family: 'Righteous', cursive;
-          font-size: 1em;
-          color: $color-font;
-          border-style: solid;
-          border-color: white;
-        }
-      }
-      }
