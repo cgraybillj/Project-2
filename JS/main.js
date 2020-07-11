@@ -1,5 +1,6 @@
 $(function () {
     console.log('Ready!')
+
     $("#search").click(function () {
         var choice = $("input[name='url']:checked").val();
         var apikey = 'qCTweoTLPCLppqQ6z3Wz4z2DBnV0Tfzj';
