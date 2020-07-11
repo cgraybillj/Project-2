@@ -5,6 +5,7 @@ $color-navbarbackground: #333333;
 $color-bordercolor: #e2492f;
 $color-bodybackgorund:#595959;
 $color-font: #ffffff;
+$color-status: #009B77;
 
 body{
   background-color: $color-bodybackgorund;
@@ -34,8 +35,32 @@ form{
   margin-top: 1%;
 }
 
+#status{
+  color: $color-status;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
 
+#output {
+  margin: 0 auto;
+  width: 1200px;
+}
 
+.gif-box {
+  margin: 0.5rem;
+  display: flex;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  img {
+      display: block;
+  }
+  h6 {
+      font-weight: bold;
+      text-align: center;
+  }
+}
 
   @media screen and (max-width: 600px) {
     nav li {

@@ -1,9 +1,12 @@
 $(function () {
     console.log('Ready!')
+
     $('#show').text("25")
+
     $('#limit').mouseup(function () {
         var limit = $('#limit').val();
         $('#show').html(limit)
+    });
 
         $("#search").click(function () {
             var choice = $("input[name='url']:checked").val();
@@ -68,4 +71,3 @@ $(function () {
 
         })
     });
-});
