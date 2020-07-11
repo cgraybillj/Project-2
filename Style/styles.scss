@@ -6,6 +6,7 @@ $color-bordercolor: #e2492f;
 $color-bodybackgorund:#595959;
 $color-font: #ffffff;
 $color-status: #009B77;
+$color-picture: #398AD7;
 
 body{
   background-color: $color-bodybackgorund;
@@ -44,21 +45,22 @@ form{
 
 #output {
   margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 1200px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
 }
-
 .gif-box {
   margin: 0.5rem;
-  display: flex;
-  border: 1px solid black;
+  border-style: solid;
+  border-color: $color-picture;
+  border-width: 5px;
   height: auto;
   width: auto;
   img {
       display: block;
-  }
-  h6 {
-      font-weight: bold;
-      text-align: center;
   }
 }
 
@@ -67,5 +69,9 @@ form{
       float: none;
       width: 100%;
       text-align: center;
+    }
+    #output{
+      display: inline-grid;
+      grid-template-columns: auto;
     }
   }

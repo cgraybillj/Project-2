@@ -37,15 +37,21 @@ form {
 
 #output {
   margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 1200px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  text-align: center;
 }
 
 .gif-box {
   margin: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid black;
+  border-style: solid;
+  border-color: #398AD7;
+  border-width: 5px;
   height: auto;
   width: auto;
 }
@@ -54,16 +60,17 @@ form {
   display: block;
 }
 
-.gif-box h6 {
-  font-weight: bold;
-  text-align: center;
-}
-
 @media screen and (max-width: 600px) {
   nav li {
     float: none;
     width: 100%;
     text-align: center;
+  }
+  #output {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
