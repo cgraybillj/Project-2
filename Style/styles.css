@@ -1,41 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 body {
   background-color: #595959;
+  font-family: "righteous","cursive","chalkduster";
 }
 
 nav {
+  overflow: hidden;
   background-color: #333333;
-  position: fixed;
-  color: #ffffff;
-  font-family: "righteous","cursive","chalkduster";
-  padding: 1.5%;
-  width: 100%;
 }
 
-#left {
+nav li {
   float: left;
-}
-
-#left li {
-  list-style-type: none;
-}
-
-#right {
-  float: right;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-#right li {
-  margin-left: 10%;
-  list-style-type: none;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 form {
-  padding-top: 6%;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+  border-color: #e2492f;
+  border-width: 5px;
+  padding: 1%;
   margin-top: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

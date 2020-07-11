@@ -2,40 +2,45 @@
 
 
 $color-navbarbackground: #333333;
+$color-bordercolor: #e2492f;
 $color-bodybackgorund:#595959;
 $color-font: #ffffff;
 
+body{
+  background-color: $color-bodybackgorund;
+  font-family: "righteous","cursive","chalkduster";
+}
 
-body {
-    background-color: $color-bodybackgorund;
-    }
+nav {
+  overflow: hidden;
+  background-color: $color-navbarbackground;
+li {
+  float: left;
+  display: block;
+  color: $color-font;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+}
 
-nav {     
-    background-color: $color-navbarbackground;
-    position: fixed;
-    color: $color-font;
-    font-family: "righteous","cursive","chalkduster";
-    padding: 1.5%;
-    width: 100%;
-    }
-
-    #left {
-      float: left;
-      li{
-        list-style-type: none;
-      }
-      }
-    #right{
-      float: right;
-      display: inline-flex;
-      padding-left: 5%;
-      padding-right: 5%;
-      li{
-        margin-left: 10%;
-        list-style-type: none;
-      }
-    }
 form{
-  padding-top: 6%;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 20px;
+  border-color:$color-bordercolor;
+  border-width: 5px;
+  padding: 1%;
   margin-top: 1%;
 }
+
+
+
+
+  @media screen and (max-width: 600px) {
+    nav li {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
