@@ -1,36 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-$color-backgroundblue: #333333;
+
+$color-navbarbackground: #333333;
+$color-bodybackgorund:#595959;
 $color-font: #ffffff;
 
+
+body {
+    background-color: $color-bodybackgorund;
+    }
+
 nav {     
-    background-color: $color-backgroundblue;
+    background-color: $color-navbarbackground;
     position: fixed;
-    top: 0;
-    width: 100%;
     color: $color-font;
     font-family: "righteous","cursive","chalkduster";
     padding: 1.5%;
+    width: 100%;
+    }
+
     #left {
       float: left;
       li{
         list-style-type: none;
       }
       }
-    }
     #right{
       float: right;
       display: inline-flex;
-      margin-right: 5%;
       padding-left: 5%;
       padding-right: 5%;
       li{
-        margin-left: 15%;
+        margin-left: 10%;
         list-style-type: none;
       }
     }
-
 form{
-  padding-top:5%
+  padding-top: 6%;
+  margin-top: 1%;
   
 }

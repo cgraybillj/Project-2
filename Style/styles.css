@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  background-color: #595959;
+}
+
 nav {
   background-color: #333333;
   position: fixed;
-  top: 0;
-  width: 100%;
   color: #ffffff;
   font-family: "righteous","cursive","chalkduster";
   padding: 1.5%;
+  width: 100%;
 }
 
-nav #left {
+#left {
   float: left;
 }
 
-nav #left li {
+#left li {
   list-style-type: none;
 }
 
@@ -22,17 +25,17 @@ nav #left li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 #right li {
-  margin-left: 15%;
+  margin-left: 10%;
   list-style-type: none;
 }
 
 form {
-  padding-top: 5%;
+  padding-top: 6%;
+  margin-top: 1%;
 }
 /*# sourceMappingURL=styles.css.map */
