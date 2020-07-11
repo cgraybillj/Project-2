@@ -65,6 +65,11 @@ form {
   display: block;
 }
 
+#bottom a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 600px) {
   nav li {
     float: none;
