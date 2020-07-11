@@ -18,6 +18,11 @@ nav li {
   text-decoration: none;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 form {
   text-align: center;
   border-style: dashed;
