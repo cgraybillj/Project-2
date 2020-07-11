@@ -76,6 +76,14 @@ form {
     display: inline-grid;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+    text-align: left;
+  }
+  #output .gif-box {
+    border-style: none;
+  }
+  #output .gif-box img {
+    border-style: solid;
+    border-color: #398AD7;
   }
 }
 /*# sourceMappingURL=styles.css.map */
