@@ -4,48 +4,35 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  color: #ffffff;
+  font-family: "righteous","cursive","chalkduster";
+  padding: 1.5%;
 }
 
-nav ul #left {
+nav #left {
   float: left;
-  border-style: solid;
-  border-color: white;
-  margin-left: 5%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-nav ul #left li {
+nav #left li {
   list-style-type: none;
-  list-style-type: none;
-  font-family: 'Righteous', cursive;
-  font-size: 1em;
-  color: #ffffff;
-  border-style: solid;
-  border-color: white;
 }
 
-nav #right {
+#right {
   float: right;
-  border-style: solid;
-  border-color: white;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  margin-right: 10%;
+  margin-right: 5%;
   padding-left: 5%;
+  padding-right: 5%;
 }
 
-nav #right li {
+#right li {
+  margin-left: 15%;
   list-style-type: none;
-  list-style-type: none;
-  font-family: 'Righteous', cursive;
-  font-size: 1em;
-  color: #ffffff;
+}
+
+form {
+  padding-top: 5%;
 }
 /*# sourceMappingURL=styles.css.map */
